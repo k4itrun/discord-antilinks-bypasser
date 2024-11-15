@@ -1,5 +1,6 @@
 *
+!*package.json
 !*.gitignore
 !*.md
-!*.mjs
+!*.ts
 !*.bat
