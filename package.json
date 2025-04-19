@@ -26,8 +26,7 @@
   },
   "homepage": "https://github.com/k4itrun/discord-antilinks-bypasser#readme",
   "devDependencies": {
-    "@k4i/eslint-config": "^2.0.0",
-    "@k4i/prettier-config": "^2.0.0",
+    "@k4i/config": "^1.0.1",
     "@types/node": "^22.14.1",
     "typescript": "^5.8.3"
   },
