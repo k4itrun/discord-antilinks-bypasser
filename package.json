@@ -1,5 +1,5 @@
 {
-  "name": "discord-antilinks-bypasser",
+  "name": "antilinks-bypasser",
   "description": "No discord anti link system will be able to delete your URLs with this script.",
   "version": "1.0.0",
   "exports": null,
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/k4itrun/discord-antilinks-bypasser.git"
+    "url": "git+https://github.com/k4itrun/antilinks-bypasser.git"
   },
   "keywords": [],
   "author": {
@@ -26,9 +26,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/k4itrun/discord-antilinks-bypasser/issues"
+    "url": "https://github.com/k4itrun/antilinks-bypasser/issues"
   },
-  "homepage": "https://github.com/k4itrun/discord-antilinks-bypasser#readme",
+  "homepage": "https://github.com/k4itrun/antilinks-bypasser#readme",
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/types": "^19.8.0",
