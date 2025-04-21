@@ -5,9 +5,13 @@
   "exports": null,
   "type": "module",
   "scripts": {
-    "deploy": "tsx index.ts --trace-warnings",
+    "deploy": "tsx src/index --trace-warnings",
+    "hooks:init": "husky",
+    "hooks:lint": "lint-staged",
+    "ci:release": "semantic-release",
+    "ci:commitlint": "commitlint --from=HEAD~10",
     "format": "prettier . --write --cache --ignore-unknown",
-    "format:check": "prettier . --check --cache --ignore-unknown",
+    "format:check": "prettier . --check --ignore-unknown",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -18,7 +22,7 @@
   "keywords": [],
   "author": {
     "name": "k4itrun",
-    "email": "contact@w1sh.xyz"
+    "email": "billoneta@proto.me"
   },
   "license": "MIT",
   "bugs": {
@@ -26,10 +30,16 @@
   },
   "homepage": "https://github.com/k4itrun/discord-antilinks-bypasser#readme",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/types": "^19.8.0",
+    "@dotenvx/dotenvx": "^1.41.0",
     "@k4i/config": "^1.0.1",
     "@types/node": "^22.14.1",
     "eslint": "^9.25.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "prettier": "^3.5.3",
+    "semantic-release": "^24.2.3",
     "typescript": "^5.8.3"
   },
   "packageManager": "pnpm@10.8.0",
