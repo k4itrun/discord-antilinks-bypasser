@@ -1,6 +1,6 @@
 // @ts-check
-import eslintConfig from "@k4i/config/eslint-config";
-import { defineConfig } from "eslint/config";
+import eslintConfig from '@billoneta/config/eslint-config';
+import { defineConfig } from 'eslint/config';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default defineConfig([
@@ -10,10 +10,9 @@ export default defineConfig([
  eslintConfig.prettier,
  [
   {
-   name: "Override",
+   name: 'Override',
    rules: {
-    "require-await": "off",
-    "node/no-process-exit": "off",
+    'node/no-process-exit': 'off',
    },
   },
  ],

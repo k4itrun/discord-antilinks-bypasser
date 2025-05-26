@@ -1,16 +1,22 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "dist",
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["./*"]
-    }
+ "$schema": "https://json.schemastore.org/tsconfig",
+ "compilerOptions": {
+  "target": "ESNext",
+  "lib": ["ESNext"],
+  "module": "ESNext",
+  "moduleResolution": "Bundler",
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+  "resolveJsonModule": true,
+  "moduleDetection": "force",
+  "strict": true,
+  "strictNullChecks": true,
+  "esModuleInterop": true,
+  "skipDefaultLibCheck": true,
+  "skipLibCheck": true,
+  "baseUrl": "./",
+  "paths": {
+   "@/*": ["./src/*"]
   }
+ }
 }

@@ -5,10 +5,7 @@
   "exports": null,
   "type": "module",
   "scripts": {
-    "deploy": "tsx src/index.ts",
-    "hook:init": "lefthook install",
-    "ci:release": "semantic-release",
-    "ci:commitlint": "commitlint --from=HEAD~10",
+    "run": "tsx src/.",
     "format": "prettier . --write --cache --ignore-unknown",
     "format:check": "prettier . --check --ignore-unknown",
     "lint": "eslint .",
@@ -21,7 +18,7 @@
   "keywords": [],
   "author": {
     "name": "k4itrun",
-    "email": "billoneta@proto.me"
+    "email": "tsx@billoneta.xyz"
   },
   "license": "MIT",
   "bugs": {
@@ -29,22 +26,19 @@
   },
   "homepage": "https://github.com/k4itrun/antilinks-bypasser#readme",
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/types": "^19.8.0",
-    "@dotenvx/dotenvx": "^1.42.0",
-    "@k4i/config": "^1.0.2",
-    "@k4i/utils": "^1.0.0",
+    "@billoneta/config": "^1.0.6",
+    "@billoneta/gitmoji": "^1.0.6",
     "@types/node": "^22.15.3",
     "eslint": "^9.25.1",
-    "lefthook": "^1.11.12",
     "prettier": "^3.5.3",
     "semantic-release": "^24.2.3",
     "typescript": "^5.8.3"
   },
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "pnpm": {
     "onlyBuiltDependencies": [
-      "esbuild"
+      "esbuild",
+      "unrs-resolver"
     ]
   }
 }
